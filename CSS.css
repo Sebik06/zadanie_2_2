@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+div.pozadie_uvod_home {
+    background-image: url("https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/1920x1400/azure/2022-08/CC850%20HEADER.jpg?h=722a6ce8&amp;itok=Y4CN8Y5Y");
+    height: calc(110vh - 92px);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: cover;
+}
+svg {
+    color: black;
+    width: 50%;
+    margin-left: 5%;
+}
+.navbar_home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: opacity(0.7);
+    background-color: black;
+    position: sticky;
+    top: -1em;
+    z-index: 1;
+}
+/*uprava loga*/
+.brand-title {
+    font-size: 2.5rem;
+    margin: .5rem;
+    margin-left: 1%;
+    font-weight: bold;
+    z-index: 1;
+}
+/*uprava loga*/
+.brand-title a {
+    text-decoration: none;
+    color: #CC0000;
+    display: block;
+    z-index: 1;
+}
+.brand-title a:link {
+    color: white;
+}
+/*logo v aktivnom stave*/
+.brand-title a:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+/*zoznam v riadku */
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+    margin-right: 1em;
+    font-size:1.2rem ;
+    display: flex;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+/*uprava zoznamu*/
+.navbar-links li {
+    list-style: none;
+    transition: 2s;
+    padding-right: 1em;
+    z-index: 1;
+}
+/*uprava zoznamu*/
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1.1rem;
+    display: block;
+    z-index: 1;
+}
+/*upraba menu v hover stave*/
+.navbar-links a:hover {
+    color: white;
+    opacity: 1;
+    transform: scale(1.1);
+    transition: 1s;
+}
+/*uprava hamburgera*/
+.toggle-button {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+/*uprava hamburgera*/
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #808080;
+    border-radius: 10px;
+}
+h1.podnadpis{
+    text-align: center;
+
+}
+p.text_onas{
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    
+}
+img.obrazok_onas {
+    transition: transform 0.3s ease;
+}
+img.obrazok_onas:hover {
+    transform: scale(1.01); 
+}
+h2.podnadpis_onas {
+    text-align: center;
+    margin-bottom: 4%;
+    font-size: 1.6rem;
+}
+div.autorske_prava_home{
+    text-align: center;
+	padding-top:3% ;
+	margin-top: 5%;
+	font-size:1.3em;
+    color: black;
+    
+}
+
+
+
+
+
+
+
+/* podstránka megacars */
+body.telo_megacars {
+    background-color: black;
+}
+
+.navbar_megacars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: opacity(1);
+    background-color: black;
+    position: sticky;
+    top: -1em;
+    z-index: 1;
+}
+h1.nadpis {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 5%;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  img.hover-shadow {
+      cursor: pointer;
+  }
+  
+  /* obsah v javascript galerii */
+
+  
+  /* Zatváracie tlacidlo*/
+  
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1em;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+img.obrazky_megacars {
+    margin-top: 10%;
+}
+div.autorske_prava_megacars{
+    text-align: center;
+	padding-top:3% ;
+	margin-top: 5%;
+	font-size:1.3em;
+    color: white;
+    
+}
+
+
+
+
+/* podstranka contact */
+
+
+
+
+
+
+/*nadpis kontakt*/
+h1.kontakt_nadpis {
+	font-weight: bold;
+	font-size: 3em;
+}
+/*Posun bunky*/
+div.bunka_kontakty {
+	margin-bottom: 6%;
+}
+/*podnadpis kontakty*/
+h2.kontakty_podnadpis {
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 4%;
+	margin-bottom: 5%;
+}
+/*nastavenie formulara*/
+.formular_riadok {
+	padding: 1.3%;
+	background-color: #f0f2f0;
+	border:none;
+	margin-bottom: 3%;
+	font-size: 1.3em;
+}
+/*nastavenie formulara*/
+.formular_riadok:hover {
+	transform: scale(1.02);
+	border-radius: 10px;
+	transition: 0.5s;
+}
+/*nastavenie tlacidla odoslat*/
+button.tlacidlo_odoslat {
+	background-color: black;
+	color: white;
+	padding: 3%;
+	text-align: center;
+	border: none;
+	font-size: 1.3em;
+}
+/*nastavenie tlacidla pri hover*/
+button:hover {
+	opacity: 80%;
+	transform: scale(1.1);
+	border-radius: 10px;
+	transition: 2s;
+}
+
+
+
+
+
+@media (min-width: 1100px) {
+    img.obrazok_onas {
+        margin-top:15em;
+        width: 25%;
+        margin-left: 5%; 
+    }
+    h1.podnadpis{
+        width: 100%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    div.obalovac_onas_2 {
+        margin-top: 15%;
+    }
+    p.text_onas {
+    font-size: 1.2em;
+    margin-top: 10%;
+    margin: auto;
+    width: 70%;
+    }
+    h2.podnadpis_onas {
+        margin-top: 7%;
+    }
+    .close {
+        color: white;
+        top: 2em;
+        right:4em;
+        position: fixed;
+        display: flex;
+        font-size: 35px;
+        font-weight: bold;
+      }
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+        max-width: 50%;
+      
+      }
+}
+@media (max-width: 1200px) {
+    img.obrazok_onas {
+    margin: auto;
+    }
+    h1.podnadpis{
+        width: 100%;
+        margin-top: 10%;
+    }
+    p.text_onas {
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+    }
+    
+   
+}
+@media (max-width: 576px) {
+    img.obrazok_onas {
+        width: 70%;
+        margin: auto;
+    }
+    h1.podnadpis{
+        width: 100%;
+        margin-top: 10%;
+    }
+    p.text_onas {
+    font-size: 1.2em;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    }
+        
+}
+
+
+@media (max-width: 1100px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        margin: auto; 
+        width: 100%;
+    }
+    .navbar {
+        background-color: black;
+        filter: opacity(0.7);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_megacars {
+        background-color: black;
+        filter: opacity(1);
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        margin-left: 1%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .close {
+        color: white;
+        top: 2em;
+        right:1em;
+        position: fixed;
+        display: flex;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 80%;
+        max-width: 70%;
+      
+      }
+}
+
+/*responsive dizajn pre max 500px*/
+@media (max-width: 500px) {
+    .navbar-links ul {
+        margin-left: 10%;
+    }
+    .close {
+        color: white;
+        top: 2em;
+        right:0.3em;
+        padding-left: 1em;
+        position: fixed;
+        display: flex;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin:auto ;
+        padding: 0;
+        width: 80%;
+        max-width: 70%;
+      }
+}
+
+
