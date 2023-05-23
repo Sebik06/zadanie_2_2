@@ -106,8 +106,13 @@ a{
     background-color: #808080;
     border-radius: 10px;
 }
+
+
+/* home stranka */
 h1.podnadpis{
     text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 2.5em;
 
 }
 p.text_onas{
@@ -124,8 +129,9 @@ img.obrazok_onas:hover {
 }
 h2.podnadpis_onas {
     text-align: center;
-    margin-bottom: 4%;
-    font-size: 1.6rem;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    font-size: 1.7rem;
 }
 div.autorske_prava_home{
     text-align: center;
@@ -276,21 +282,24 @@ div.autorske_prava_megacars{
 
 
 
+
 /* podstranka contact */
-
-
-
-
 
 
 /*nadpis kontakt*/
 h1.kontakt_nadpis {
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 2.5em;
+}
+svg.icona_svg{
+    color: #565756  ;
+    margin: auto;
 }
 /*Posun bunky*/
 div.bunka_kontakty {
 	margin-bottom: 6%;
+    margin: auto;
+    text-align: center;
 }
 /*podnadpis kontakty*/
 h2.kontakty_podnadpis {
@@ -298,6 +307,7 @@ h2.kontakty_podnadpis {
 	text-align: center;
 	font-weight: bold;
 	margin-top: 4%;
+    text-decoration: underline;
 	margin-bottom: 5%;
 }
 /*nastavenie formulara*/
@@ -307,18 +317,19 @@ h2.kontakty_podnadpis {
 	border:none;
 	margin-bottom: 3%;
 	font-size: 1.3em;
+    border-radius: 10px;
 }
 /*nastavenie formulara*/
 .formular_riadok:hover {
 	transform: scale(1.02);
-	border-radius: 10px;
 	transition: 0.5s;
 }
 /*nastavenie tlacidla odoslat*/
 button.tlacidlo_odoslat {
-	background-color: black;
-	color: white;
+	background-color: #f0f2f0;
+	color: black;
 	padding: 3%;
+
 	text-align: center;
 	border: none;
 	font-size: 1.3em;
@@ -330,7 +341,60 @@ button:hover {
 	border-radius: 10px;
 	transition: 2s;
 }
+div.autorske_prava_contact{
+    text-align: center;
+	padding-top:3% ;
+	margin-top: 5em;
+	font-size:1.3em;
+    color: black;
+    
+}
 
+
+
+/* podstranka technology */
+div.pozadie {
+    background-position: center;
+    position: relative;
+    opacity: 1;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+div.pozadie_engines_1 {
+    background-image: url("https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/1920x1400/azure/2022-01/TFG%20-%20magazine.jpg?h=14e7e879&itok=D0tDPnk8");
+    height: calc(80vh - 92px);
+    
+}
+h1.nadpis_engines {
+    text-align: center;
+    margin-top: 6vh;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 6vh;
+}
+p.text_engins {
+    text-align: center;
+}
+div.pozadie_engines_2 {
+    margin-top: 10vh;
+    background-image: url("https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/1920x1400/azure/2022-04/KenoZache_IMG_9507_1.jpg?h=51373060&itok=KjMhsyNq");
+    height: calc(80vh - 92px);
+    
+}
+div.pozadie_engines_3 {
+    margin-top: 10vh;
+    background-image: url("https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/1920x1400/azure/2022-01/KenoZache_IMG_6812.jpg?h=92a0fee2&itok=GGkuvFrb");
+    height: calc(80vh - 92px);
+    
+}
+div.pozadie_engines_4 {
+    margin-top: 10vh;
+    background-image: url("https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/1920x1400/azure/2022-04/Jesko_racetrack_topview_0.jpg?h=1dea590d&itok=D_V4ViLo");
+    height: calc(80vh - 92px);
+    
+}
 
 
 
@@ -374,8 +438,8 @@ button:hover {
         padding: 0;
         width: 80%;
         max-width: 50%;
-      
       }
+   
 }
 @media (max-width: 1200px) {
     img.obrazok_onas {
@@ -391,6 +455,17 @@ button:hover {
     margin-top: 10%;
     margin-bottom: 10%;
     width: 50%;
+    }
+    
+   
+}
+@media (min-width: 1200px) {
+    p.text_engins {
+        margin-top: 15vh;
+        margin-left: 15vh;
+    }
+    img.obrazok_engines {
+        margin-left: 15vh;
     }
     
    
@@ -411,9 +486,17 @@ button:hover {
     margin-bottom: 10%;
     width: 80%;
     }
+    p.text_engins {
+        width: 85%;
+        margin: auto;
+    }
+    img.obrazok_engines {
+        width: 80%;
+        margin: auto;
+        margin-top: 4vh;
+    }
         
 }
-
 
 @media (max-width: 1100px) {
     .toggle-button {
@@ -498,5 +581,33 @@ button:hover {
         max-width: 70%;
       }
 }
+@media (max-width: 992px) {
+    div.text_contact {
+        margin-bottom: 4em;
+    }
+}
+@media (max-width: 600px) {
+    /*nastavenie formulara*/
+    .formular_riadok {
+        padding: 3%;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1.1em;
+        border-radius: 5px;
+    }
+    /*nastavenie tlacidla odoslat*/
+    button.tlacidlo_odoslat {
+        background-color: #f0f2f0;
+        color: black;
+        width: 7em;
+        padding: 5%;
+        border-radius: 5px;
+        text-align: center;
+        border: none;
+        font-size: 1.1em;
+    }
+}
+
+
 
 
