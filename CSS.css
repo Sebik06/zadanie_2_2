@@ -50,6 +50,7 @@ svg {
 /*logo v aktivnom stave*/
 .brand-title a:hover {
     transform: scale(1.1);
+    filter: opacity(0.7);
     transition: 1s;
 }
 /*zoznam v riadku */
@@ -84,7 +85,7 @@ a{
 /*upraba menu v hover stave*/
 .navbar-links a:hover {
     color: white;
-    opacity: 1;
+    filter: opacity(0.7);
     transform: scale(1.1);
     transition: 1s;
 }
@@ -169,7 +170,11 @@ h1.nadpis {
     font-size: 3em;
     padding-top: 5%;
 }
-
+img.hover-shadow:hover {
+    transform: scale(1.06);
+    filter: opacity(0.5);
+    translate: 2s;
+}
 
 
 .modal {
@@ -269,6 +274,11 @@ h1.nadpis {
   }
 img.obrazky_megacars {
     margin-top: 10%;
+}
+img.obrazky_megacars:hover {
+    transform: scale(1.02);
+    filter: opacity(0.5);
+    transition: 1s;
 }
 div.autorske_prava_megacars{
     text-align: center;
@@ -398,6 +408,55 @@ div.pozadie_engines_4 {
 
 
 
+/* Podstranka E-shop */
+div.obalovac_text {
+    background-color:  #383839;
+    
+}
+div.pozadie_shop {
+    background-image: url("https://gear.koenigsegg.com/wp-content/uploads/2022/11/Gemera-Small-e1668507289367.png");
+    height: calc(100vh - 92px);
+}
+h1#text_yellow_1 {
+    color: white;
+
+}
+h1#text_yellow_2 {
+    color: white;
+}
+p.text_uvod_shop {
+    margin: auto;
+    color: white;
+}
+p.tlacidlo_obchod {
+    text-align: center;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+p.tlacidlo_obchod:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+    transition: 2s;
+}
+h1.podnadpis_shop {
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5em;
+}
+p.text_bunka {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: -0.3em;
+}
+p.cena_bunka {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+
+
 
 @media (min-width: 1100px) {
     img.obrazok_onas {
@@ -439,7 +498,46 @@ div.pozadie_engines_4 {
         width: 80%;
         max-width: 50%;
       }
+
+      /* podstranka E-SHOp */
+    div.obalovac_shop {
+        width: 80%;
+        margin: auto;
+    }
+    img.obrazok_shop_1 {
+        margin-left: 6%;
+    }
    
+   
+}
+@media (min-width: 1200px) {
+    div.obalovac_text {
+        margin-left: 5vh;
+    }
+    img.obrazok_shop {
+        width: 50%;
+        height: 200%;
+    }
+    h1#text_yellow_1 {
+        margin-top: 10%;
+        font-size: 3em;
+    }
+    h1#text_yellow_2 {
+        margin-left: 5vh;
+        font-size: 3em;
+    }
+    p.text_uvod_shop {
+        width: 70%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    p.tlacidlo_obchod {
+        text-align: center;
+        padding: 2%;
+        width: 60%;
+        margin: auto;
+        margin-top: 3em;
+    }
 }
 @media (max-width: 1200px) {
     img.obrazok_onas {
@@ -455,6 +553,47 @@ div.pozadie_engines_4 {
     margin-top: 10%;
     margin-bottom: 10%;
     width: 50%;
+    }
+
+
+      /* podstranka E-SHOp */
+      div.obalovac_shop {
+        width: 80%;
+        margin: auto;
+    }
+    img.obrazok_shop_1 {
+        margin: auto;
+    }
+    div.obalovac_text {
+        margin: auto;
+        margin-top: 2vh;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    img.obrazok_shop {
+        width: 50%;
+        height: 200%;
+    }
+    h1#text_yellow_1 {
+        margin-top: 10%;
+        font-size: 3em;
+        text-align: center;
+    }
+    h1#text_yellow_2 {
+        text-align: center;
+        font-size: 3em;
+    }
+    p.text_uvod_shop {
+        width: 70%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    p.tlacidlo_obchod {
+        text-align: center;
+        padding: 2%;
+        width: 40%;
+        margin: auto;
+        margin-top: 3em;
     }
     
    
@@ -608,6 +747,19 @@ div.pozadie_engines_4 {
     }
 }
 
-
+@media (max-width: 767px) {
+    div.obalovac_text {
+        width: 90%;
+    }
+    h1#text_yellow_1 {
+        font-size: 2em;
+        text-align: center;
+    
+    }
+    h1#text_yellow_2 {
+        font-size: 2em;
+        text-align: centerx ;
+    }
+}
 
 
