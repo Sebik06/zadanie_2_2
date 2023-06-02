@@ -21,12 +21,13 @@ svg {
 }
 .navbar_home{
     display: flex;
+    margin-top: -1em;
     justify-content: space-between;
     align-items: center;
     filter: opacity(0.7);
     background-color: black;
     position: sticky;
-    top: -1em;
+    top: -1.5em;
     z-index: 1;
 }
 /*uprava loga*/
@@ -156,12 +157,13 @@ body.telo_megacars {
 
 .navbar_megacars {
     display: flex;
+    margin-top: -1em;
     justify-content: space-between;
     align-items: center;
     filter: opacity(1);
     background-color: black;
     position: sticky;
-    top: -1em;
+    top: -1.5em;
     z-index: 1;
 }
 h1.nadpis {
