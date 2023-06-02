@@ -93,7 +93,7 @@ a{
 /*uprava hamburgera*/
 .toggle-button {
     position: absolute;
-    top: 1.7rem;
+    top: 2.5rem;
     right: 1rem;
     display: none;
     flex-direction: column;
